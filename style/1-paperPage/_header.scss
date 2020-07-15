@@ -1,0 +1,150 @@
+.main-section {
+  height: 105vh;
+  position: relative;
+  background-image: url(../image/bg/colorhero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  width: 95%;
+  margin: auto;
+  z-index: 10;
+}
+
+/*--- Mobile Header ---*/
+.mobile-fix-header-wrapper,
+.mobile-list {
+  display: none;
+}
+
+/*--- Navigation Head ---*/
+
+.main-title-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0rem;
+  z-index: 100;
+}
+
+.main-static {
+  display: flex;
+}
+
+.main-sticky {
+  display: none;
+  background: #fffef7;
+  position: fixed;
+}
+
+.main-title-link-wrapper {
+  text-decoration: none;
+  color: black;
+}
+
+.main-title {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin: 1.5rem 0rem 2rem 0rem;
+}
+
+.nav-chapter-no {
+  font-size: 2.4rem;
+}
+
+.nav-chapter-name {
+  font-size: 4.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-chapter-wrapper {
+  display: inline-block;
+  margin: 0.7rem 0rem;
+
+  & .nav-chapter-name-wrapper {
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+}
+// small fix
+
+.nav-chapter-name-wrapper:hover {
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  transform-origin: bottom;
+}
+
+/*--- Side Links ---*/
+
+.side-link-wrapper {
+  display: flex;
+}
+
+.left-link {
+  position: fixed;
+  left: -3.3rem;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.right-link {
+  position: fixed;
+  right: -2.2rem;
+  top: 50%;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.right-link.right-text {
+  right: -0.5rem;
+}
+
+.left-link.left-color {
+  left: -2.5rem;
+}
+
+.left-link-inner-wrapper a,
+.right-link-inner-wrapper a {
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.left-link-inner-wrapper,
+.right-link-inner-wrapper {
+  //padding: 1.5rem 1rem;
+  transition: all 0.2s ease;
+  cursor: none;
+  &:hover {
+    transform: translateY(5px);
+  }
+}
+
+/* --- Background ---*/
+
+.bg-front-wrapper {
+  display: none;
+  margin-top: -185rem;
+  margin-bottom: -200vh;
+  transform: scale(0.55);
+  z-index: -1;
+}
+
+/*--- Mobile Nav ---*/
+.mobile-nav-wrapper {
+  display: none;
+}
