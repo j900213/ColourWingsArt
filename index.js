@@ -105,9 +105,10 @@ $("body:not(mobile-title-link-wrapper)").click(function () {
 });
 
 /*--- Magic Fireworks ---*/
+
 for (let i = 0; i < target.length; i++) {
   // Add bg when hovering
-  target[i].addEventListener("mouseenter", function () {
+  target[i].addEventListener("mouseover", function () {
     target[i].parentNode.classList.add("bgcolor");
     target[i].parentNode.style.zIndex = `10`;
     switch (i + 1) {
@@ -233,7 +234,7 @@ for (let i = 0; i < target.length; i++) {
   });
 
   // Add fade out animation when mouse out
-  target[i].addEventListener("mouseleave", function () {
+  target[i].addEventListener("mouseout", function () {
     setTimeout(function () {
       target[i].parentNode.classList.remove("bgcolor");
       target[i].parentNode.style.zIndex = `1`;
